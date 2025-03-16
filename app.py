@@ -6,12 +6,10 @@ import tensorflow as tf
 import os
 from pathlib import Path
 
-# กำหนด base directory
-base_dir = Path("/Users/naja/Documents/GitHub/IS")  # กำหนดให้ตรงกับที่ไฟล์โมเดลอยู่
-
 # โหลดโมเดลด้วยพาธที่ถูกต้อง
-ml_model_path = base_dir / "models" / "employee_attrition_model.pkl"
-nn_model_path = base_dir / "models" / "diabetes_nn_model_v5.keras"
+
+ml_model_path = "models/employee_attrition_model.pkl"
+nn_model_path = "models/diabetes_nn_model_v5.keras"
 
 # ตรวจสอบพาธว่าไฟล์มีอยู่หรือไม่
 print("Trying to load model from:", ml_model_path)
